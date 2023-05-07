@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>689</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: rgb(114, 125, 188);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="userAddress">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>320</y>
+     <width>411</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Ex: Metro Manila, Makati City, Alsons Building 2286 Pasong Tamo Ext.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submitButton1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>390</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: 2px solid rgb(185, 188, 223);
+border-radius: 10px;
+background-color: rgb(206, 208, 238);
+}
+QPushButton:hover {
+background-color: rgb(218, 220, 252);
+}
+QPushButton:pressed {
+background-color: rgb(193, 194, 238)
+}</string>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AppointmentLabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>80</y>
+     <width>451</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>23</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Medical Appointment System</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EnterNameLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>190</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Enter Name:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userAge">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>260</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Age</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EnterAgeLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>250</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Enter Age:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EnterAddressLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>310</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 10px;
+padding-left: 2px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Enter Address:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userName">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>200</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Last Name, First Name MI.</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

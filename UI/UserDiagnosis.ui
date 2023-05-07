@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: rgb(151, 166, 220)
+}</string>
+  </property>
+  <widget class="QLineEdit" name="userTemp">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>140</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Ex: 30</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submitButton2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>730</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: 2px solid rgb(185, 188, 223);
+border-radius: 10px;
+background-color: rgb(206, 208, 238);
+}
+QPushButton:hover {
+background-color: rgb(218, 220, 252);
+}
+QPushButton:pressed {
+background-color: rgb(193, 194, 238)
+}</string>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WelcomeLabel">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(99, 101, 185);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Welcome! </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="WeightLabel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Weight (kg):</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userHeight">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>140</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Ex: 158</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="HeightLabel">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>140</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Height (cm):</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TempLabel">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>140</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Current Temperature (°C):</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userWeight">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Ex: 60</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="InstructionsLabel1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>821</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 8px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Kindly fill out this form. Enter all the information in the text boxes, and press the &quot;Submit&quot; button if you are done.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="InstructionsLabel2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 8px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Please enter 'N/A' if you do not have any allergies, medications, or family diseases.</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userExer">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>240</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Y/N</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="surgeryLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Have you had any surgeries recently?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ExerLabel">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Do you exercise?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MedicationLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>420</y>
+     <width>391</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>What medications are you taking right now?</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userSurgery">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>280</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Y/N</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="userMedication">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>460</y>
+     <width>711</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="vaccinationLabel">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>240</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Have you had any recent vaccinations?</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userVaccination">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>240</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Y/N</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="allergyLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>520</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Allergies:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="userAllergy">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>560</y>
+     <width>711</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="diabetesLabel">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>280</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Do you have a history with Diabetes?</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userDiabetes">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>280</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Y/N</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="InstructionsLabel2_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>190</y>
+     <width>911</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Answer the items below with only &amp;quot;Yes&amp;quot; or &amp;quot;No&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="commonSymptomsLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>591</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Have you experienced common symptoms such as colds and others?</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="userCommonSymptoms">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>330</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Y/N</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="famDiseaseLabel">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>620</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color:rgb(82, 87, 136);
+border-radius: 10px;
+padding-left: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Family Diseases:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="userFamDisease">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>660</y>
+     <width>711</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border: 2px solid rgb(55, 57, 124);
+border-radius: 10px;
+color: rgb(14, 15, 21);
+padding-left: 10px;
+padding-right: 20px;
+background-color: rgb(242, 242, 255);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="InstructionsLabel2_3">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>380</y>
+     <width>921</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+color: rgb(255, 254, 234);
+background-color: rgb(90, 76, 148);
+border-radius: 8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Use the text boxes below to specify your answer. Use commas to separate your answers. Example: Asthma, Haemophilia&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
